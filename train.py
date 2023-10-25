@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from PIL import Image, ImageFile
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
-from imutils import make_numpy_grid, de_norm
+from pyutils import make_numpy_grid, de_norm
 from logger_tool import Logger, Timer
 from metric_tool import ConfuseMatrixMeter
 from models.network import *
@@ -14,6 +14,7 @@ import torch.optim as optim
 from models.losses import cross_entropy
 import models.losses as losses
 from pyutils import get_device
+import numpy as np
 
 print(torch.cuda.is_available())
 
