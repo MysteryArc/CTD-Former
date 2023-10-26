@@ -1,12 +1,11 @@
-
 class DataConfig:
     data_name = ""
     root_dir = ""
     label_transform = "norm"
     def get_data_config(self, data_name):
         self.data_name = data_name
-        if data_name == 'LEVIR':
-            self.root_dir = 'path to the root of LEVIR-CD dataset'
+        if data_name == 'WHU-CD':
+            self.root_dir = './samples/'
         elif data_name == 'quick_start':
             self.root_dir = './samples/'
         else:

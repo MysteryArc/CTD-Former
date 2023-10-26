@@ -303,7 +303,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--gpu_ids",
         type=str,
-        default="1",
+        default="0",
         help="gpu ids: e.g. 0  0,1,2, 0,2. use -1 for CPU",
     )
     parser.add_argument("--project_name", default="train", type=str)
@@ -324,7 +324,7 @@ if __name__ == "__main__":
     parser.add_argument("--n_class", default=2, type=int)
     parser.add_argument(
         "--net_G",
-        default="CTD-Former",
+        default="base_transformer_pos_s4",
         type=str,
     )
     parser.add_argument("--loss", default="ce", type=str)

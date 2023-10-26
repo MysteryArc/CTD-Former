@@ -8,7 +8,7 @@ import numpy as np
 
 from torch.utils import data
 
-from data_utils import CDDataAugmentation
+from datasets.data_utils import CDDataAugmentation
 
 
 """
@@ -29,7 +29,7 @@ label_suffix = ".png"  # jpg for gan dataset, others : png
 
 
 def load_img_name_list(dataset_path):
-    img_name_list = np.loadtxt(dataset_path, dtype=np.str)
+    img_name_list = np.loadtxt(dataset_path, dtype=np.str_)
     if img_name_list.ndim == 2:
         return img_name_list[:, 0]
     return img_name_list
@@ -70,7 +70,7 @@ class ImageDataset(data.Dataset):
         )
         self.img_name_list = load_img_name_list(self.list_path)
 
-        self.A_size = len(self.img_name_list)  # get the size of dataset A
+        self.A_size = self.img_name_list.size # get the size of dataset A
         self.to_tensor = to_tensor
         if is_train:
             self.augm = CDDataAugmentation(

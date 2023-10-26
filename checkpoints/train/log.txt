@@ -1,0 +1,6 @@
+================ (Thu Oct 26 16:32:29 2023) ================
+gpu_ids: [0] project_name: train checkpoint_root: checkpoints num_workers: 0 dataset: CDDataset data_name: WHU-CD batch_size: 6 split: train split_val: val img_size: 256 n_class: 2 net_G: base_transformer_pos_s4 loss: ce optimizer: sgd lr: 0.01 max_epochs: 1000 lr_policy: linear lr_decay_iters: 100 checkpoint_dir: checkpoints\train vis_dir: vis\train lr: 0.0100000
+Is_training: True. Epoch 0 / 999, epoch_mF1= 0.14789
+acc: 0.14826 miou: 0.07995 mf1: 0.14789 iou_0: 0.06966 iou_1: 0.09024 F1_0: 0.13025 F1_1: 0.16554 precision_0: 0.85120 precision_1: 0.09133 recall_0: 0.07052 recall_1: 0.88342 
+
+Begin evaluation...

@@ -5,8 +5,8 @@ import torch
 from torch.utils.data import DataLoader
 from torchvision import utils
 
-import data_config
-from CD_dataset import CDDataset
+import datasets.data_config as data_config
+from datasets.CD_dataset import CDDataset
 
 def get_loaders(args):
     data_name = args.data_name
