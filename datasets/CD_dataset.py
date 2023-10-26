@@ -64,10 +64,10 @@ class ImageDataset(data.Dataset):
         self.root_dir = root_dir
         self.img_size = img_size
         self.split = split  # train | train_aug | val
-        # self.list_path = self.root_dir + '/' + LIST_FOLDER_NAME + '/' + self.list + '.txt'
-        self.list_path = os.path.join(
-            self.root_dir, LIST_FOLDER_NAME, self.split + ".txt"
-        )
+        self.list_path = "C:/Users/Mysteryarc/Desktop/workSpace/CTD-Former/samples/list/train.txt"
+        # self.list_path = os.path.join(
+        #     self.root_dir, LIST_FOLDER_NAME, self.split + ".txt"
+        # )
         self.img_name_list = load_img_name_list(self.list_path)
 
         self.A_size = self.img_name_list.size # get the size of dataset A
