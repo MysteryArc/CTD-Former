@@ -17,7 +17,7 @@ from models.help_funcs import (
     PreNorm,
     FeedForward,
     Attention,
-    Attention1,
+    # Attention1,
 )
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")

@@ -1,0 +1,12 @@
+================ (Thu Oct 26 17:38:17 2023) ================
+gpu_ids: [0] project_name: test print_models: False num_workers: 4 dataset: CDDataset data_name: WHU-CD batch_size: 8 split: test img_size: 256 n_class: 2 net_G: base_resnet18 checkpoint_name: best_ckpt.pt checkpoint_dir: checkpoints\test vis_dir: vis\test ================ (Thu Oct 26 17:38:50 2023) ================
+gpu_ids: [0] project_name: test print_models: False num_workers: 4 dataset: CDDataset data_name: WHU-CD batch_size: 8 split: test img_size: 256 n_class: 2 net_G: base_resnet18 checkpoint_name: best_ckpt.pt checkpoint_dir: checkpoints\test vis_dir: vis\test ================ (Thu Oct 26 17:44:22 2023) ================
+gpu_ids: [0] project_name: test print_models: False num_workers: 4 dataset: CDDataset data_name: WHU-CD batch_size: 8 split: test img_size: 256 n_class: 2 net_G: base_resnet18 checkpoint_name: best_ckpt.pt checkpoint_dir: checkpoints\test vis_dir: vis\test ================ (Thu Oct 26 17:46:34 2023) ================
+gpu_ids: [0] project_name: test print_models: False num_workers: 4 dataset: CDDataset data_name: WHU-CD batch_size: 8 split: test img_size: 256 n_class: 2 net_G: base_resnet18 checkpoint_name: best_ckpt.pt checkpoint_dir: checkpoints\test vis_dir: vis\test loading last checkpoint...
+================ (Thu Oct 26 17:49:20 2023) ================
+gpu_ids: [0] project_name: test print_models: False num_workers: 4 dataset: CDDataset data_name: WHU-CD batch_size: 8 split: test img_size: 256 n_class: 2 net_G: base_transformer_pos_s4 checkpoint_name: best_ckpt.pt checkpoint_dir: checkpoints\test vis_dir: vis\test loading last checkpoint...
+Eval Historical_best_acc = 0.8427 (at epoch 687)
+
+Begin evaluation...
+acc: 0.95312 miou: 0.75091 mf1: 0.84273 iou_0: 0.95026 iou_1: 0.55155 F1_0: 0.97449 F1_1: 0.71097 precision_0: 0.95834 precision_1: 0.87889 recall_0: 0.99121 recall_1: 0.59692 
+
